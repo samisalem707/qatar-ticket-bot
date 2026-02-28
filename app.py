@@ -3,8 +3,10 @@ import time
 from bs4 import BeautifulSoup
 import telegram
 
-TOKEN = "8748197604:AAHsvqY0-TT0rUv01QFgj32xXmb0owfb0qg"
-CHAT_ID = "65941056"
+import os
+
+TOKEN = os.environ.get("TOKEN")
+CHAT_ID = os.environ.get("CHAT_ID")
 
 URL = "https://official-tickets.roadtoqat ar.qa/qatar-football"
 
